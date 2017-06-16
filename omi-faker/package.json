@@ -1,0 +1,29 @@
+{
+  "name": "omi-faker",
+  "version": "1.0.0",
+  "description": "minimal prototype implimentation of the Open Music Initiative API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefferyshivers/omi-faker.git"
+  },
+  "keywords": [
+    "open",
+    "music",
+    "initiative"
+  ],
+  "dependencies": [
+    "sql-to-json",
+    "readline",
+    "mysql"
+  ],
+  "author": "Jeffery Shivers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefferyshivers/omi-faker/issues"
+  },
+  "homepage": "https://github.com/jefferyshivers/omi-faker#readme"
+}

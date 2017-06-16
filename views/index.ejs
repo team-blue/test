@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+
+
+    <h1><%= title %></h1>
+
+    <p>Welcome to the <%= title %> web app, for setting and querying artists and their songs.</p>
+
+    <p>
+      This is a minimal interface to simulate live (manual) transactions with a ledger using an
+      implimentation of the Open Music Initiative API. This only simulates transactions, and doesn't
+      actually reach any public ledger / database.
+    </p>
+
+
+    <script src="/javascripts/omi-reqs.js"></script>
+    <script src="/javascripts/bundle.js"></script>
+    <script>
+
+
+      var omiAPI = require('omi-faker')
+
+      // create a "database" (here a JSON object)
+      var data = {}
+      // create a new omi api object
+      // we are "Team Blue", and our key is 11.
+      let inst = new omiAPI.instance(data, "Team Blue", 11)
+      // inst.registerArtist("The Beatles", ["Eleanor Rigby", "Let It Be", "Some Other Song"])
+
+      inst.registerArtist(
+        "The Beatles",
+        "Universal",
+        "Let it Be",
+        ["SoundCloud", "VEVO", "Spotify", "Apple Music"]
+      )
+
+
+      const $ = require('jquery')
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+    <div id="datasheet"></div>
+
+    <script>
+
+    // $("#datasheet").html(JSON.stringify(data).text)
+
+    </script>
+
+
+  </body>
+</html>
